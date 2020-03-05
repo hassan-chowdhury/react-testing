@@ -1,0 +1,10 @@
+root = true
+# All files
+[*]
+indent_style = space
+
+[*.js*]
+indent_size = 2
+
+[*.{scss,css}]
+indent_size = 2
