@@ -1,7 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
-const Headline = ({header, desc}) => {
+const Headline = ({
+  header,
+  desc,
+}) => {
   if (!header) return null;
 
   return (
@@ -11,5 +15,12 @@ const Headline = ({header, desc}) => {
     </div>
   );
 };
+
+const propTypes = {
+  header: PropTypes.string,
+  desc: PropTypes.string,
+};
+
+Headline.propTypes = propTypes;
 
 export default Headline;
